@@ -16,7 +16,7 @@ perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar dbnsfp30a hum
 If you add to the path annotate_variation.pl you can run it only with "annotate_variation.pl arg1 arg2"  
 
 
-### You can download the following databases:  
+### You can download the additional databases:  
 In the user guide (filter, gene or region) you can find the explanation of each anontation https://annovar.openbioinformatics.org/en/latest/user-guide/filter/  
 
 ```annotate_variation.pl -buildver hg19 -downdb -webfrom annovar gnomad_genome humandb/``` gnomad_genome has a more comprehensive AF than exac03, the later is quite sparse   
