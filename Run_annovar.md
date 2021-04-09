@@ -16,13 +16,13 @@ perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar dbnsfp30a hum
 
 If you add to the path annotate_variation.pl you can run it only with "annotate_variation.pl arg1 arg2"  
 
-You can download the following databases
+You can download the following databases  
 ```annotate_variation.pl -buildver hg19 -downdb -webfrom annovar gnomad_genome humandb/```  
-gnomad_genome has a more comprehensive AF than exac03, the later is quite sparse
+gnomad_genome has a more comprehensive AF than exac03, the later is quite sparse  
 ```annotate_variation.pl -buildver hg19 -downdb -webfrom annovar 1000g2015aug humandb/```  
-It threw me an error whan I ran it because it could not locate 1000g2015aug.txt
+It threw me an error whan I ran it because it could not locate 1000g2015aug.txt  
 ```annotate_variation.pl -buildver hg19 -downdb -webfrom annovar clinvar_20160302 humandb/```  
-clinical anotations
+clinical anotations  
 
 
 In the user guide (filter, gene or region) you can find the explanation of each anotation https://annovar.openbioinformatics.org/en/latest/user-guide/filter/
