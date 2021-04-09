@@ -35,3 +35,8 @@ humandb4annovar=/path/to/humandb/
 or 
 
 ```table_annovar.pl $vcfsource_folder/your.vcf $humandb4annovar -buildver hg19 -out A_label_to_add_to_the_resulrs_file -remove -protocol refGene,cytoBand,gnomad_genome,exac03,avsnp147,dbnsfp30a,clinvar_20160302 -operation g,r,f,f,f,f,f -nastring . -polish --vcfinput```
+
+### Further comments:
+
+ Interpretation of polyphen2 https://annovar.openbioinformatics.org/en/latest/user-guide/filter/#-polyphen-2-annotation
+
