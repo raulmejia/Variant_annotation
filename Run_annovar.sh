@@ -1,22 +1,20 @@
 ### 
 # This script shows you how to install and run annovar
 ###
+
 # This is the reference
 # https://annovar.openbioinformatics.org/en/latest/user-guide/startup/
 
 
-
 # Download the databases in some place in your computer under the folder humandb
-```
-perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar refGene humandb/
+```perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar refGene humandb/```
 perl annotate_variation.pl -buildver hg19 -downdb cytoBand humandb/
 perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar exac03 humandb/
 perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar avsnp147 humandb/
 perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar dbnsfp30a humandb/  
 ```
-
 If you add to the path annotate_variation.pl you can run it only with "annotate_variation.pl arg1 arg2"  
-
+```
 You can download the following databases
 annotate_variation.pl -buildver hg19 -downdb -webfrom annovar gnomad_genome humandb/  
 gnomad_genome has a more comprehensive AF than exac03, the later is quite sparse
