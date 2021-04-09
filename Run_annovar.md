@@ -30,8 +30,8 @@ In the user guide (filter, gene or region) you can find the explanation of each 
 $vcfsource_folder/your.vcf
 humandb4annovar=/path/to/humandb/
 
-table_annovar.pl $vcfsource_folder/your.vcf $humandb4annovar -buildver hg19 -out Label4yourresults -remove -protocol refGene,cytoBand,exac03,avsnp147,dbnsfp30a -operation g,r,f,f,f -nastring . -polish --vcfinput  
+```table_annovar.pl $vcfsource_folder/your.vcf $humandb4annovar -buildver hg19 -out Label4yourresults -remove -protocol refGene,cytoBand,exac03,avsnp147,dbnsfp30a -operation g,r,f,f,f -nastring . -polish --vcfinput```
 
 or 
 
-table_annovar.pl $vcfsource_folder/your.vcf $humandb4annovar -buildver hg19 -out A_label_to_add_to_the_resulrs_file -remove -protocol refGene,cytoBand,gnomad_genome,exac03,avsnp147,dbnsfp30a,clinvar_20160302 -operation g,r,f,f,f,f,f -nastring . -polish --vcfinput
+```table_annovar.pl $vcfsource_folder/your.vcf $humandb4annovar -buildver hg19 -out A_label_to_add_to_the_resulrs_file -remove -protocol refGene,cytoBand,gnomad_genome,exac03,avsnp147,dbnsfp30a,clinvar_20160302 -operation g,r,f,f,f,f,f -nastring . -polish --vcfinput```
