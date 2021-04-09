@@ -17,7 +17,7 @@ If you add to the path annotate_variation.pl you can run it only with "annotate_
 
 
 ### You can download the following databases:  
-In the user guide (filter, gene or region) you can find the explanation of each anotation https://annovar.openbioinformatics.org/en/latest/user-guide/filter/  
+In the user guide (filter, gene or region) you can find the explanation of each anontation https://annovar.openbioinformatics.org/en/latest/user-guide/filter/  
 
 ```annotate_variation.pl -buildver hg19 -downdb -webfrom annovar gnomad_genome humandb/``` gnomad_genome has a more comprehensive AF than exac03, the later is quite sparse   
 
@@ -30,6 +30,8 @@ In the user guide (filter, gene or region) you can find the explanation of each 
 $vcfsource_folder/your.vcf
 humandb4annovar=/path/to/humandb/
 
-table_annovar.pl $vcfsource_folder/your.vcf $humandb4annovar -buildver hg19 -out Label4yourresults -remove -protocol refGene,cytoBand,exac03,avsnp147,dbnsfp30a -operation g,r,f,f,f -nastring . -polish --vcfinput
+table_annovar.pl $vcfsource_folder/your.vcf $humandb4annovar -buildver hg19 -out Label4yourresults -remove -protocol refGene,cytoBand,exac03,avsnp147,dbnsfp30a -operation g,r,f,f,f -nastring . -polish --vcfinput  
 
-#(use table_annovar.pl if it is still no added to your path)
+or 
+
+table_annovar.pl $vcfsource_folder/your.vcf $humandb4annovar -buildver hg19 -out A_label_to_add_to_the_resulrs_file -remove -protocol refGene,cytoBand,gnomad_genome,exac03,avsnp147,dbnsfp30a,clinvar_20160302 -operation g,r,f,f,f,f,f -nastring . -polish --vcfinput
